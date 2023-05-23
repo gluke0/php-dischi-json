@@ -45,7 +45,7 @@ header{
 .bigger{
     z-index: 1;
     position: absolute;
-    background-color: rgba(17, 32, 48, 0.8);
+    background-color: rgba(17, 32, 48, 0.9);
     padding: 1rem 2rem;
     height: 100vh;
     width: 100%;
@@ -57,6 +57,15 @@ header{
 .single img{
     width: 32rem;
     height: 32rem;
+}
+
+.bigger h2, .bigger span{
+    font-size: 1.8rem;
+}
+
+.bigger h3{
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .close{
