@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title> PHP Dischi JSON </title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <div id="app">
     
-   
-
+    <header>
+        <div class="container p-3">
+            <div class="row">
+                <div class="col">
+                   <img class="icon" src="./img/Spotify_icon.png" alt="Spotify Logo">
+                </div>
+            </div>
+        </div>
+    </header>
+    
 </div>
     
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
