@@ -23,6 +23,21 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 g-5" v-for="item in disk">
+                    <div>
+                        <img class="img-fluid" :src="item.poster" alt="Poster" >
+                        <h2> {{ item.title }} </h2>
+                        <h3> {{ item.author }} </h3>
+                        <span> {{ item.year}} </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     
 </div>
     
