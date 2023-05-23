@@ -24,15 +24,15 @@
         </div>
     </header>
 
-    <main>
+    <main class="pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-4 g-5" v-for="item in disk">
-                    <div>
-                        <img class="img-fluid" :src="item.poster" alt="Poster" >
-                        <h2> {{ item.title }} </h2>
-                        <h3> {{ item.author }} </h3>
-                        <span> {{ item.year}} </span>
+                    <div class="disk text-white text-center">
+                        <img class="img-fluid mb-4" :src="item.poster" alt="Poster" >
+                        <h2 class="mb-3"> {{ item.title }} </h2>
+                        <h3 class="mb-3"> {{ item.author }} </h3>
+                        <span class="mb-3"> {{ item.year}} </span>
                     </div>
                 </div>
             </div>
