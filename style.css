@@ -19,18 +19,19 @@ header{
     background-color: rgb(17, 32, 48);
     width: 100%;
     height: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     cursor: pointer;
+    aspect-ratio: 1;
 }
 
 .disk:hover{
     transform: scale(1.03);
 }
 
-.disk img{
-    width: 20rem;
-    height: 20rem;  
-    aspect-ratio: 1; 
+#pst{
+    width: 15rem;
+    height: 15rem;
+    aspect-ratio: 1;
 }
 
 .disk h2, .disk span{
@@ -47,8 +48,9 @@ header{
     position: absolute;
     background-color: rgba(17, 32, 48, 0.9);
     padding: 1rem 2rem;
-    height: 100vh;
-    width: 100%;
+    height: calc(100vh - 5rem);
+    width: calc(100vw - 5rem);
+    margin: 2.5rem 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,4 +76,9 @@ header{
     height: 3rem;
     width: 3rem;
     border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.close:hover{
+    transform: scale(1.03);
 }

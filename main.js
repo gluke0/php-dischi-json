@@ -21,9 +21,9 @@ createApp({
             bigger.className = 'bigger text-center';
 
             bigger.innerHTML = `
-            <div class="close position-absolute text-uppercase text-white border border-white d-flex justify-content-center align-items-center"> x </div>
+            <div class="close position-absolute text-uppercase text-white border border-white d-flex justify-content-center align-items-center" @click="closeDisk"> x </div>
             <div class="single">
-                <img class="mb-4 img-fluid" src="${album.querySelector('img').src}">
+                <img class="mb-4" src="${album.querySelector('img').src}">
                 <h2 class="text-white mb-3"> ${album.querySelector('h2').textContent} </h2>
                 <h3 class="text-white mb-3"> ${album.querySelector('h3').textContent} </h3>
                 <span class="text-white mb-3"> ${album.querySelector('span').textContent} </span>
@@ -31,7 +31,10 @@ createApp({
             `;
 
             document.body.prepend(bigger);
-        }
+        },
+        closeDisk() {
+           
+        },
     },
 
     mounted(){
