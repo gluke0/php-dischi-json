@@ -58,3 +58,11 @@ header{
     width: 32rem;
     height: 32rem;
 }
+
+.close{
+    right: 50px;
+    top: 50px;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+}

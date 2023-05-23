@@ -21,6 +21,7 @@ createApp({
             bigger.className = 'bigger text-center';
 
             bigger.innerHTML = `
+            <div class="close position-absolute text-uppercase text-white border border-white d-flex justify-content-center align-items-center"> x </div>
             <div class="single">
                 <img class="mb-4 img-fluid" src="${album.querySelector('img').src}">
                 <h2 class="text-white mb-3"> ${album.querySelector('h2').textContent} </h2>
