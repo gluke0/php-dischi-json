@@ -1,5 +1,6 @@
 body{
     background-color: rgb(29, 45, 60);
+    height: 100vh;
 }
 
 header{
@@ -22,10 +23,38 @@ header{
     cursor: pointer;
 }
 
+.disk:hover{
+    transform: scale(1.03);
+}
+
+.disk img{
+    width: 20rem;
+    height: 20rem;  
+    aspect-ratio: 1; 
+}
+
 .disk h2, .disk span{
     font-size: 1.5rem;
 }
 
 .disk h3{
     font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.bigger{
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(17, 32, 48, 0.8);
+    padding: 1rem 2rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single img{
+    width: 32rem;
+    height: 32rem;
 }
