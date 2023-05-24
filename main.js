@@ -21,7 +21,7 @@ createApp({
             bigger.className = 'bigger text-center';
 
             bigger.innerHTML = `
-            <div class="close position-absolute text-uppercase text-white border border-white d-flex justify-content-center align-items-center" @click="closeDisk"> x </div>
+            <div class="close position-absolute text-uppercase text-white border border-white d-flex justify-content-center align-items-center"> x </div>
             <div class="single">
                 <img class="mb-4" src="${album.querySelector('img').src}">
                 <h2 class="text-white mb-3"> ${album.querySelector('h2').textContent} </h2>
@@ -30,10 +30,13 @@ createApp({
             </div>
             `;
 
+            bigger.querySelector('.close').addEventListener('click', this.closeDisk);
+
             document.body.prepend(bigger);
         },
         closeDisk(){
-            this.$refs.bigger.remove();
+            let bigger = document.querySelector('.bigger');
+            document.body.removeChild(bigger);
         },
     },
 
