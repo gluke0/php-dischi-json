@@ -32,8 +32,8 @@ createApp({
 
             document.body.prepend(bigger);
         },
-        closeDisk() {
-           
+        closeDisk(){
+            this.$refs.bigger.remove();
         },
     },
 
